@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <collaboration id="6BA7BA21-2FA3-1FD8-0D5D-01E0050844F5">
+    <participant id="6C5EDD93-AD3B-0112-5492-5E6FF169A078" name="Mudança de Ticket" processRef="813FBE3E-C20E-7B5E-90FC-CF969EE67D55" />
+  </collaboration>
+  <process id="813FBE3E-C20E-7B5E-90FC-CF969EE67D55" name="Mudança de Estado">
+    <extensionElements />
+    <laneSet id="7CCE99CD-AC2C-C24D-6980-E69CEFAFC8EF">
+      <lane id="D1646E4C-971A-B78C-E0F0-D4BEBD3A037E" name="interna">
+        <flowNodeRef>D1E7EE19-9B74-08A0-A94C-A0481D6F09F5</flowNodeRef>
+        <flowNodeRef>2806AC85-25FD-C320-734E-01EBCA4B4EA1</flowNodeRef>
+        <flowNodeRef>4D5E4BD7-BE46-87B3-247E-B8929BD63FED</flowNodeRef>
+        <flowNodeRef>2E884A06-CFBB-A55A-8E81-BC08DD0AB55A</flowNodeRef>
+        <flowNodeRef>ExclusiveGateway_04jxk41</flowNodeRef>
+      </lane>
+    </laneSet>
+    <task id="D1E7EE19-9B74-08A0-A94C-A0481D6F09F5" name="Aberto">
+      <incoming>SequenceFlow_1huij77</incoming>
+      <outgoing>SequenceFlow_0utqath</outgoing>
+    </task>
+    <task id="2806AC85-25FD-C320-734E-01EBCA4B4EA1" name="tESTE" />
+    <task id="4D5E4BD7-BE46-87B3-247E-B8929BD63FED" name="cotovelo">
+      <incoming>SequenceFlow_0mjvazx</incoming>
+    </task>
+    <startEvent id="2E884A06-CFBB-A55A-8E81-BC08DD0AB55A" name="Abertura do ticket">
+      <outgoing>SequenceFlow_1huij77</outgoing>
+    </startEvent>
+    <sequenceFlow id="SequenceFlow_1huij77" sourceRef="2E884A06-CFBB-A55A-8E81-BC08DD0AB55A" targetRef="D1E7EE19-9B74-08A0-A94C-A0481D6F09F5" />
+    <exclusiveGateway id="ExclusiveGateway_04jxk41">
+      <incoming>SequenceFlow_0utqath</incoming>
+      <outgoing>SequenceFlow_0mjvazx</outgoing>
+    </exclusiveGateway>
+    <sequenceFlow id="SequenceFlow_0utqath" sourceRef="D1E7EE19-9B74-08A0-A94C-A0481D6F09F5" targetRef="ExclusiveGateway_04jxk41" />
+    <sequenceFlow id="SequenceFlow_0mjvazx" sourceRef="ExclusiveGateway_04jxk41" targetRef="4D5E4BD7-BE46-87B3-247E-B8929BD63FED" />
+  </process>
+  <bpmndi:BPMNDiagram id="66121C89-D14D-0E3F-E718-7191ED9371EF">
+    <bpmndi:BPMNPlane id="0DAAAE9E-BE8D-C57B-0A77-46FA3B6FBBBC" bpmnElement="6BA7BA21-2FA3-1FD8-0D5D-01E0050844F5">
+      <bpmndi:BPMNShape id="6C5EDD93-AD3B-0112-5492-5E6FF169A078_gui" bpmnElement="6C5EDD93-AD3B-0112-5492-5E6FF169A078" isHorizontal="true">
+        <omgdc:Bounds x="147" y="108" width="933" height="400" />
+        <bpmndi:BPMNLabel labelStyle="FACD0CC4-E1D9-5C88-8EB9-E877D4436DD5">
+          <omgdc:Bounds x="48" y="170" width="12" height="59" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="D1646E4C-971A-B78C-E0F0-D4BEBD3A037E_gui" bpmnElement="D1646E4C-971A-B78C-E0F0-D4BEBD3A037E" isHorizontal="true">
+        <omgdc:Bounds x="177" y="108" width="903" height="400" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="D1E7EE19-9B74-08A0-A94C-A0481D6F09F5_gui" bpmnElement="D1E7EE19-9B74-08A0-A94C-A0481D6F09F5" isHorizontal="true">
+        <omgdc:Bounds x="422" y="165" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="2806AC85-25FD-C320-734E-01EBCA4B4EA1_gui" bpmnElement="2806AC85-25FD-C320-734E-01EBCA4B4EA1" isHorizontal="true">
+        <omgdc:Bounds x="800" y="165" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="4D5E4BD7-BE46-87B3-247E-B8929BD63FED_gui" bpmnElement="4D5E4BD7-BE46-87B3-247E-B8929BD63FED" isHorizontal="true">
+        <omgdc:Bounds x="800" y="315" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="2E884A06-CFBB-A55A-8E81-BC08DD0AB55A_gui" bpmnElement="2E884A06-CFBB-A55A-8E81-BC08DD0AB55A" isHorizontal="true">
+        <omgdc:Bounds x="274" y="187" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1huij77_di" bpmnElement="SequenceFlow_1huij77">
+        <omgdi:waypoint x="310" y="205" />
+        <omgdi:waypoint x="422" y="205" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="366" y="184" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ExclusiveGateway_04jxk41_di" bpmnElement="ExclusiveGateway_04jxk41" isMarkerVisible="true">
+        <omgdc:Bounds x="632" y="180" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0utqath_di" bpmnElement="SequenceFlow_0utqath">
+        <omgdi:waypoint x="522" y="205" />
+        <omgdi:waypoint x="632" y="205" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0mjvazx_di" bpmnElement="SequenceFlow_0mjvazx">
+        <omgdi:waypoint x="657" y="230" />
+        <omgdi:waypoint x="657" y="355" />
+        <omgdi:waypoint x="800" y="355" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+    <bpmndi:BPMNLabelStyle id="FACD0CC4-E1D9-5C88-8EB9-E877D4436DD5">
+      <omgdc:Font name="Arial" size="11" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" />
+    </bpmndi:BPMNLabelStyle>
+    <bpmndi:BPMNLabelStyle id="C749001B-5646-5F8C-6BDF-BF175CCBB5D8">
+      <omgdc:Font name="Arial" size="11" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" />
+    </bpmndi:BPMNLabelStyle>
+  </bpmndi:BPMNDiagram>
+</definitions>
