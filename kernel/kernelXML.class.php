@@ -160,9 +160,14 @@ class KernelXML
         $nameFile = date('Y') . date('d') . time();
         $dir = __DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR.'data'.DIRECTORY_SEPARATOR."$nameFile.xml";
         $fp = \fopen($dir, "w") or die("Unable to open file!");
-        \fwrite($fp, $fileXML);
-        \fclose($fp);
-        return $nameFile;
+        if(\fwrite($fp, $fileXML)){
+            \fclose($fp);
+            return $nameFile;
+        }else{
+            \fclose($fp);
+            http_response_code(500);
+            json_encode(['msg'=>'Ocorreu um erro ao gerar o arquivo']);
+        }
     }
 
     /**
@@ -200,11 +205,17 @@ class KernelXML
                     $this->createAtribute($element,'id',$vl->getId());
                     $this->createAtribute($element,'name',$vl->getName());
 
+                    /**
+                     * @details Cria os relacionamentos entre os elementos préviamente criados
+                     */
                     if(isset($res['sequenceFlow'])){
                         foreach ($res['sequenceFlow'] as $x=>$flow){
                             if(($flow["sourceRef"]["id"] === $vl->getId() || $flow["targetRef"]["id"] === $vl->getId()) && !$flow["isCreated"] ){
                                 $res['sequenceFlow'][$x]["isCreated"] = true;
                                 $flow["isCreated"] = true;
+                                /**
+                                 * @details Cria todos os eleemntos e seus respecitvos atributos para fazer o relacionamento
+                                 */
                                 $sequenceFlow = $this->createElement('sequenceFlow');
                                 $this->createAtribute($sequenceFlow,'id',$flow["id"]);
                                 $this->createAtribute($sequenceFlow,'sourceRef',$flow["sourceRef"]["id"]);
@@ -257,6 +268,10 @@ class KernelXML
         }
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function edge($id)
     {
         $edge = $this->createElement('bpmndi:BPMNEdge');

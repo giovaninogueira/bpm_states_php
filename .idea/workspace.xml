@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70073b18-7c4b-46a4-af3d-bbe3c1489c57" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/getFileBPMN.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/view/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/view/modeler.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.php" afterPath="$PROJECT_DIR$/app/app.php" />
-      <change beforePath="$PROJECT_DIR$/data/diagram.xml" afterPath="$PROJECT_DIR$/history/diagram.xml" />
-      <change beforePath="$PROJECT_DIR$/data/example.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/model.xml" afterPath="$PROJECT_DIR$/history/model.xml" />
       <change beforePath="$PROJECT_DIR$/kernel/kernelXML.class.php" afterPath="$PROJECT_DIR$/kernel/kernelXML.class.php" />
+      <change beforePath="$PROJECT_DIR$/view/modeler.html" afterPath="$PROJECT_DIR$/view/modeler.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,31 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/app.php">
+      <file leaf-file-name="modeler.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/modeler.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="269">
+              <caret line="80" column="23" lean-forward="true" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kernelObj.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kernel/kernelObj.class.php">
+      <file leaf-file-name="bpmn-modeler.development.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/bpmn-modeler.development.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2465">
-              <caret line="186" column="39" lean-forward="false" selection-start-line="186" selection-start-column="39" selection-end-line="186" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kernelXML.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kernel/kernelXML.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="163" column="21" lean-forward="true" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
+            <state relative-caret-position="234">
+              <caret line="3052" column="25" lean-forward="false" selection-start-line="3052" selection-start-column="22" selection-end-line="3052" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -55,10 +39,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Lane_11crgl3</find>
-      <find>sid-C3803939-0872-457F-8336-EAE484DC4A04</find>
-      <find>sid-87F4C1D6-25E1-4A45-9DA7-AD945993D06F</find>
-      <find>StartEvent_0sf8tni</find>
       <find>F7C6A30-E313-B935-5C2A-AC7A0E8CCE71</find>
       <find>pool</find>
       <find>getName</find>
@@ -85,6 +65,10 @@
       <find>SequenceFlow_0utqath</find>
       <find>205</find>
       <find>waypoint</find>
+      <find>print</find>
+      <find>save-button</find>
+      <find>export</find>
+      <find>svg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,10 +85,12 @@
         <option value="$PROJECT_DIR$/kernel/kernelObj.class.php" />
         <option value="$PROJECT_DIR$/data/example.xml" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/app/getFileBPMN.php" />
         <option value="$PROJECT_DIR$/view/index.html" />
-        <option value="$PROJECT_DIR$/kernel/kernelXML.class.php" />
         <option value="$PROJECT_DIR$/app/app.php" />
+        <option value="$PROJECT_DIR$/kernel/kernelXML.class.php" />
+        <option value="$PROJECT_DIR$/app/getFileBPMN.php" />
+        <option value="$PROJECT_DIR$/lib/bpmn.css" />
+        <option value="$PROJECT_DIR$/view/modeler.html" />
       </list>
     </option>
   </component>
@@ -207,18 +193,19 @@
       <workItem from="1527516427196" duration="1033000" />
       <workItem from="1527517515533" duration="5108000" />
       <workItem from="1527603847552" duration="619000" />
-      <workItem from="1527617383654" duration="557000" />
+      <workItem from="1527617383654" duration="2918000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101411000" />
+    <option name="totallyTimeSpent" value="103772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2173913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2173913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -226,7 +213,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3174114" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3162612" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3149808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -274,22 +261,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kernel/kernelObj.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3128">
-          <caret line="186" column="39" lean-forward="false" selection-start-line="186" selection-start-column="39" selection-end-line="186" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/kernelXML.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3094">
-          <caret line="182" column="5" lean-forward="false" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/example.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2006">
@@ -591,36 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/modeler.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="53" column="78" lean-forward="true" selection-start-line="50" selection-start-column="6" selection-end-line="53" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/getFileBPMN.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/kernelObj.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2465">
-          <caret line="186" column="39" lean-forward="false" selection-start-line="186" selection-start-column="39" selection-end-line="186" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kernel/kernelXML.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="163" column="21" lean-forward="true" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/2018291527617846.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -645,10 +586,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/kernelXML.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="165" column="14" lean-forward="true" selection-start-line="165" selection-start-column="14" selection-end-line="165" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bpmn.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/kernelObj.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2465">
+          <caret line="186" column="39" lean-forward="false" selection-start-line="186" selection-start-column="39" selection-end-line="186" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/getFileBPMN.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="374">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/modeler.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="80" column="23" lean-forward="true" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bpmn-modeler.development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="3052" column="25" lean-forward="false" selection-start-line="3052" selection-start-column="22" selection-end-line="3052" selection-end-column="25" />
           <folding />
         </state>
       </provider>
