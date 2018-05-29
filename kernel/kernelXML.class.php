@@ -147,11 +147,22 @@ class KernelXML
         /**
          * @details Cria as labels do padão
          */
+
         for($i = 0; $i < 2;$i++){
            $this->labelFont($idLabel,$BPMNDiagram);
             $idLabel = \Model\Element::generateID();
         }
-        echo $this->xml->saveXML();
+
+        /**
+         * @details Cria o arquivo XML do BPMN
+         */
+        $fileXML = $this->xml->saveXML();
+        $nameFile = date('Y') . date('d') . time();
+        $dir = __DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR.'data'.DIRECTORY_SEPARATOR."$nameFile.xml";
+        $fp = \fopen($dir, "w") or die("Unable to open file!");
+        \fwrite($fp, $fileXML);
+        \fclose($fp);
+        return $nameFile;
     }
 
     /**
